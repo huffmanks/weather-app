@@ -1,6 +1,6 @@
 const container = document.querySelector('#container');
 const formEl = document.querySelector('form.weatherdata-form');
-const API_KEY = process.env.WEATHER_API_KEY;
+const API_KEY = 'OPENWEATHERMAP API KEY';
 
 async function fetchWeather(e) {
     const form = e.target;
@@ -13,7 +13,6 @@ async function fetchWeather(e) {
     const response = await fetch(url);
     const data = await response.json().then((data) => {
         filter(data);
-        console.log(data);
     });
 }
 
@@ -155,4 +154,3 @@ filter = (data) => {
 
 // TODO
 // 1. Update icon colors
-// 2. Put API key in dotenv
