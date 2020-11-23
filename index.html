@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Weather App</title>
+    </head>
+    <body>
+        <header>
+            <form class="weatherdata-form">
+                <input
+                    type="text"
+                    placeholder="Enter Zip Code"
+                    name="zip-code"
+                />
+                <button type="submit" class="btn">Search</button>
+            </form>
+            <h1>Weather App</h1>
+        </header>
+        <div id="container" class="container">
+            <div class="skeleton">
+                <div class="location">
+                    <div></div>
+                    <div>4-Day Forecast</div>
+                </div>
+                <div class="today-forecast">
+                    <div class="weather-container">
+                        <div class="date"></div>
+                        <div class="skeleton-img"></div>
+                    </div>
+
+                    <div class="details-container">
+                        <div class="primary-details">
+                            <div class="current-temp"></div>
+                            <div class="description"></div>
+                        </div>
+
+                        <div class="secondary-details">
+                            <div>
+                                <h4></h4>
+                                <div></div>
+                            </div>
+                            <div>
+                                <h4></h4>
+                                <div></div>
+                            </div>
+                            <div>
+                                <h4></h4>
+                                <div></div>
+                            </div>
+                            <div>
+                                <h4></h4>
+                                <div></div>
+                            </div>
+                            <div>
+                                <h4></h4>
+                                <div></div>
+                            </div>
+                            <div>
+                                <h4></h4>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="future-forecast">
+                    <div class="future-day">
+                        <div class="date"></div>
+                        <div class="skeleton-img"></div>
+                        <div class="description"></div>
+                        <div class="current-temp"></div>
+                    </div>
+                    <div class="future-day">
+                        <div class="date"></div>
+                        <div class="skeleton-img"></div>
+                        <div class="description"></div>
+                        <div class="current-temp"></div>
+                    </div>
+                    <div class="future-day">
+                        <div class="date"></div>
+                        <div class="skeleton-img"></div>
+                        <div class="description"></div>
+                        <div class="current-temp"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
