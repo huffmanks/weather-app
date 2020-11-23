@@ -1,5 +1,6 @@
 const container = document.querySelector('#container');
 const formEl = document.querySelector('form.weatherdata-form');
+const API_KEY = process.env.WEATHER_API_KEY;
 
 async function fetchWeather(e) {
     const form = e.target;
@@ -7,7 +8,7 @@ async function fetchWeather(e) {
     const zipCode = formData.get('zip-code');
     if (zipCode === '') return;
     e.preventDefault();
-    const url = `https://api.openweathermap.org/data/2.5/forecast?zip=${zipCode}&cnt=25&units=imperial&appid=03d71488b9ab4dbd8beea09c3d19b8eb`;
+    const url = `https://api.openweathermap.org/data/2.5/forecast?zip=${zipCode}&cnt=25&units=imperial&appid=${API_KEY}`;
 
     const response = await fetch(url);
     const data = await response.json().then((data) => {
