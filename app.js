@@ -1,6 +1,6 @@
 const container = document.querySelector('#container');
 const formEl = document.querySelector('form.weatherdata-form');
-const API_KEY = 'OPENWEATHERMAP API KEY';
+const API_KEY = 'INSERT OPENWEATHERMAP API KEY HERE';
 
 async function fetchWeather(e) {
     const form = e.target;
@@ -151,6 +151,3 @@ filter = (data) => {
     </div>
     `;
 };
-
-// TODO
-// 1. Update icon colors

@@ -15,7 +15,7 @@ body {
     max-width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: #ccc;
+    background-color: #6a5acd;
 }
 
 header {
@@ -25,7 +25,8 @@ header {
     align-items: center;
     margin-bottom: 1rem;
     padding: 1rem 2rem;
-    background-color: #333;
+    background-color: #fff;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.5);
 }
 
 header input,
@@ -33,26 +34,31 @@ header button {
     height: 2.5rem;
     font-size: 1rem;
     border-radius: 5px;
-    border: none;
     outline: none;
     padding: 0.5rem;
 }
 
+header input {
+    border: 3px solid #6a5acd;
+}
+
 .btn {
     padding: 0.5rem 0.75rem;
-    transition: all 0.3s ease;
+    color: #6a5acd;
     font-weight: bold;
+    border: none;
+    transition: all 0.3s ease;
 }
 
 .btn:hover {
-    background-color: slateblue;
+    background-color: #6a5acd;
     color: #fff;
     transform: scale(0.98);
 }
 
 header h1 {
     font-size: 3rem;
-    color: #fff;
+    color: #6a5acd;
 }
 
 .container {
@@ -150,8 +156,9 @@ header h1 {
     font-weight: bold;
 }
 
-.location div:nth-child(1) {
-    padding: 0.5rem 0.75rem;
+.location div {
+    padding: 0.5rem 1rem;
+    color: #6a5acd;
     background-color: #fff;
     border-radius: 50px;
 }
@@ -165,6 +172,7 @@ header h1 {
     align-items: center;
     background-color: #fff;
     border-radius: 5px;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.5);
 }
 
 .weather-container {
@@ -203,11 +211,11 @@ header h1 {
 
 .current-temp {
     margin-bottom: 1rem;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem;
     border-radius: 50%;
     font-size: 3rem;
     font-weight: 700;
-    background-color: #333;
+    background-color: #6a5acd;
     color: #fff;
 }
 
@@ -224,7 +232,7 @@ header h1 {
 }
 
 .secondary-details div div {
-    background-color: #333;
+    background-color: #6a5acd;
     color: #fff;
 }
 
@@ -243,6 +251,7 @@ header h1 {
     padding: 1.5rem 0;
     border-radius: 5px;
     background-color: #fff;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.5);
 }
 
 .future-day .date {
@@ -260,7 +269,7 @@ header h1 {
 
 .future-day .current-temp {
     font-size: 2rem;
-    padding: 1rem 0.75rem;
+    padding: 1rem;
 }
 
 @media (max-width: 800px) {
